@@ -1,0 +1,22 @@
+
+---------------------------------------------
+O V E R V I E W   O F   T H E   F O L D E R S 
+---------------------------------------------
+
+----------------------------------------
+
+- The dict_info folder will contain (once the experiments are running) information about the unsupervised representations (the reduction scales, the number of centroids used, the reconstruction loss, etc.).
+
+----------------------------------------
+
+- The trained_models folder will contain the weights of the different unsupervised models trained as a .pt file.
+
+----------------------------------------
+
+- The results_csv folder will contain all intermediate results for logistic regressions on unsupervised architectures at different scales.
+
+----------------------------------------
+
+- The final_results_csv file will contain the final results of the logistic regression on the correct representation (with the correct hyperparameters).
+
+----------------------------------------
