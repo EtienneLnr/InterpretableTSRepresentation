@@ -35,7 +35,7 @@ The following supervised model hyperparameters can be changed in the logistic_re
 
 
 ---------------------------------------------
-O V E R V I E W   O F   T H E   F O L D E R S 
+Folders overview 
 ---------------------------------------------
 
 ----------------------------------------
