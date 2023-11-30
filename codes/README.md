@@ -1,6 +1,6 @@
 
 --------------------------------------------------
-H O W   T O  R U N   T H E   E X P E R I M E N T S
+How to run the experiments 
 --------------------------------------------------
 
 To learn the unsupervised representations, find the best representation and then train the logistic regression on the unigrams and bigrams with the appropriate hyperparameters, you just have to run the following command: 
@@ -16,7 +16,7 @@ To know the length of the corresponding time series, please refer to the file Da
 
 
 -----------------------------
-H Y P E R P A R A M E T E R S
+Hyperparameters
 -----------------------------
 
 The following unsupervised model hyperparameters can be changed in the main.sh file:
