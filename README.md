@@ -16,9 +16,8 @@ The method leverages **equivariant neural networks** and **vector-quantized late
 
 This repository provides:  
 1. Core **unsupervised representation learning models** and **classifiers**.  
-2. Preprocessed **datasets** from the UCR archive.  
+2. Some preprocessed **datasets** from the UCR archive.  
 3. Scripts to reproduce experiments and evaluate models.  
-4. Space to store **results and trained models**.
 
 ---
 
@@ -26,7 +25,7 @@ This repository provides:
 
 ```bash
 Project/
-├── data/                         # Preprocessed datasets (UCR archive)
+├── data/                         # Example of preprocessed datasets (UCR archive)
 │   ├── PowerCons_TEST/           # Test tensors for Power Consumption dataset
 │   ├── PowerCons_TRAIN/          # Train tensors
 │   ├── ShapeletSim_TEST/
