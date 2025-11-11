@@ -19,7 +19,7 @@ e.g. `bash main.sh PowerCons 144` or `bash main.sh SmallKitchenAppliances 720`
 
 ## 2. Hyperparameters
 
-## 2.1 Unsupervised Model
+### 2.1 Unsupervised Model
 The following hyperparameters can be modified directly in `main.sh`:
 - Scale of reduction of the temporal dimension
 - Number of valid centroids
@@ -27,7 +27,7 @@ The following hyperparameters can be modified directly in `main.sh`:
 - Number of channels
 - Batch size
  
-## 2.2 Supervised Model
+### 2.2 Supervised Model
 
 The logistic regression hyperparameters can be modified in:
 

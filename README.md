@@ -1,6 +1,6 @@
 # Interpretable Time Series Neural Representation for Classification  
 
-**Paper:** “Interpretable time series neural representation for classification purposes”  
+**Paper:** [Interpretable time series neural representation for classification purposes](https://arxiv.org/pdf/2310.16696)
 📄 Published in **IEEE DSAA 2023 (Best Research Paper Award)**
 
 <p align="center">
