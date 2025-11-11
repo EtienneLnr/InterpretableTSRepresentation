@@ -64,7 +64,7 @@ Please read the  `codes/README.md` file.
 ## 4. Data Format
 
 The datasets in `data/` are **z-normalized** and stored as PyTorch tensors:  
-- `X_tensor.pt` → Input time series (shape: samples × time × channels)  
+- `X_tensor.pt` → Input time series (shape: samples × time × 1)  
 - `y_tensor.pt` → Labels (shape: samples × 1)  
 
 **Supported datasets**: Power Consumption, ShapeletSim, SmallKitchenAppliances (from UCR archive).  
