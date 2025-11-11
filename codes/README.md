@@ -1,55 +1,67 @@
+# Code Execution and Experiments
 
---------------------------------------------------
-How to run the experiments 
---------------------------------------------------
+This README explains how to run the experiments for **Interpretable Time Series Neural Representation**.
 
-To learn the unsupervised representations, find the best representation and then train the logistic regression on the unigrams and bigrams with the appropriate hyperparameters, you just have to run the following command: 
+---
 
---> bash main.sh [dataset_name] [time_series_length]
+## 1. How to Run Experiments
 
-e.g. $bash main.sh PowerCons 144  
-or   $bash main.sh SmallKitchenAppliances 720  
+To learn the unsupervised representations, find the best representation, and then train the logistic regression on the unigrams and bigrams with the appropriate hyperparameters, simply run:
 
+```bash
+bash main.sh [dataset_name] [time_series_length]
+```
 
-Please refer to the data folder to check the available datasets in this folder. 
-To know the length of the corresponding time series, please refer to the file DataSummary.csv.
+e.g. `bash main.sh PowerCons 144` or `bash main.sh SmallKitchenAppliances 720`
 
+- Please refer to the `data/` folder to check the available datasets.
+- To know the corresponding time series length, please consult `DataSummary.csv`.
 
------------------------------
-Hyperparameters
------------------------------
+## 2. Hyperparameters
 
-The following unsupervised model hyperparameters can be changed in the main.sh file:
+## 2.1 Unsupervised Model
+The following hyperparameters can be modified directly in `main.sh`:
+- Scale of reduction of the temporal dimension
+- Number of valid centroids
+- Number of epochs
+- Number of channels
+- Batch size
+ 
+## 2.2 Supervised Model
 
-- The scale of reduction of the temporal dimension 
-- The number of valid centroids
-- The number of epochs 
-- The number of channels 
-- The number of epochs 
-- The batch size
+The logistic regression hyperparameters can be modified in:
 
+`codes/classifiers/logistic_reg_equi_ensemble.py`
 
-The following supervised model hyperparameters can be changed in the logistic_reg_equi_ensemble.py file (classifiers folder):
+- Search spaces for L1 penalty and L2 penalty
 
-- The search spaces for the l1 penalty and the l2 penalty.
+---
 
+## 3. Folder Overview
 
----------------------------------------------
-Folders overview 
----------------------------------------------
+### unsupervised_model
 
-----------------------------------------
+Contains:
 
-- The unsupervised_model folder contains our unsupervised model, a file to train it, and a file to extract n-grams from the learned representation.
+- The unsupervised model  
+- Scripts to train the model  
+- Scripts to extract n-grams from the learned representation
 
-----------------------------------------
+### classifiers
 
-- The classifiers folder contains the content for using logistic regression over the learned representations.
+Contains:
 
-----------------------------------------
+- Code to train logistic regression on the learned representations
 
-- The utils folder contains a file with useful functions for training models and preprocessing tasks.
+### utils
 
-----------------------------------------
+Contains:
 
+- Helper functions for training and preprocessing tasks
 
+---
+
+## 4. Notes
+
+- Make sure your datasets are preprocessed as tensors in the `data/` folder.  
+- Results and trained models will automatically be saved in the `results/` folder after running `main.sh`.
